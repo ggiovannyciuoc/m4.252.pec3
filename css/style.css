@@ -5,16 +5,25 @@
 }
 
 body{
+
     overflow-x: hidden;
     color: #1c1c1c;
     background-color: #e8e8e8;
 }
 
-a{ color:#9b1700 ; text-decoration: none;}
+a{ 
+    color:#9b1700 ; text-decoration: none;
+}
 
+img a:hover{
+    opacity: 0.99;
+
+
+}
 /******************** barra de navegacion *******************/
 
 nav{ 
+
     display: inline-grid;
     grid-template-columns:auto 60% auto;
     text-align: center;
@@ -25,23 +34,27 @@ nav{
 }
 
 nav a{
+
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     color: #1c1c1c;
 }
 
-nav a:hover{ 
+nav a:hover{
+
     color:  rgb(28, 28, 28,0.5);
 }
 
 nav a:active{
+
     font-style: italic;
     font-weight: 700;
     color: #1c1c1c;
 }
 
 nav ul{
+
     display: inline-grid;
     grid-template-columns:auto auto ;
     text-align: center;
@@ -51,7 +64,9 @@ nav ul{
     font-family: 'Open Sans', sans-serif;
 }
 
-nav ul li{ list-style: none; }
+nav ul li{ 
+    list-style: none;
+}
 
 .contenedor-logo{  
     display: inline-grid;
@@ -63,6 +78,7 @@ nav ul li{ list-style: none; }
 }
 
 .contenedor-logo a{
+
     color: #1c1c1c;
     text-transform: lowercase;
 }
@@ -74,18 +90,33 @@ nav ul li{ list-style: none; }
 }
 
 .logo-rojo a{ 
+
     color: #9b1700;
     font-style: italic;
 }
 
 .logo-rojo a:hover{ 
+
     color: #9b1700;
     font-style: italic;
 }
 
+.boton{
+
+    background-color:#9b1700 ;
+    color: #FFFFFF;
+    border-radius: 2px;
+    padding: 6px;
+    width: 130px;
+    border: unset;
+    cursor: pointer;
+    font-family: 'Noto Serif', serif;
+}
+
 /************* query barra de navegacion ************************/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
+    
     nav{
 
       display: inline-grid;
@@ -93,9 +124,9 @@ nav ul li{ list-style: none; }
       width: 100%;
       text-align: center;
     }
-  }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     nav ul{
 
         display: inline-grid;
@@ -105,28 +136,31 @@ nav ul li{ list-style: none; }
         position: relative;
         top: 40px;     
     }
-  }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
+
     .contenedor-logo{
-    width: 205px;
-    margin: auto;
-    position: relative;
-    top: 42px;
+        
+        width: 205px;
+        margin: auto;
+        position: relative;
+        top: 42px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
+
     .iniciar-sesion{
         padding:6px;
         position: relative;
         top: -120px;
-    
     }
 }
 
 /******************** index ***********************************/
 .index-contenedor{
+
     width: 78%;
     margin:auto;
     padding-top: 10px;
@@ -134,37 +168,47 @@ nav ul li{ list-style: none; }
 }
 
 .titulos{
+
     text-align: center;
     clear: both;
     margin-top: 16px;
     margin-bottom: 8px;
+    padding:10px;
 }
 
 #que-es-oscars-club{
+
     text-align: center;
+    line-height: 1.6;
+    padding-bottom: 20px;
 }
 
 #como-funciona{
+
     display: inline-grid;
-    grid-template-columns:auto auto auto auto ;
-    grid-gap:20px;
+    grid-template-columns: 25% 25% 25% 25% ;
     text-align: center;
     align-items: center;
     width: 100%;
-    padding:20px;    
+    padding:10px;
+    padding-bottom: 35px;   
 }
 
 #unete-al-club{
+
     display: inline-grid;
     grid-template-columns:35% auto;
     grid-gap:40px;
     width: 100%;
-    padding:20px;    
+    padding:20px;
+    line-height: 1.6; 
+     
 }
 
 form{
-    font-size: 0.65em;
-    line-height: 1.5;
+
+    font-size: 0.7em;
+    line-height: 1.6;
     text-align: justify;
     padding-bottom: 50px;
     width: 100%;
@@ -173,6 +217,7 @@ form{
 }
 
 form input{
+
     width: 100%;
     padding:6px;
     margin-top: 4px;
@@ -180,62 +225,73 @@ form input{
     font-size: 1.3em;
 }
 
-/*****************Media queries index ***************************/
+.check{ width: 15px; }
 
-@media screen and (max-width: 768px) {
-    .index-contenedor {
+/***************** Media queries index ***************************/
+
+@media screen and (max-width: 768px){
+   
+    .index-contenedor{
       width: 100%;
-    }
-  }
-
-@media screen and (max-width: 768px) {
-    #unete-al-club,#como-funciona {
-      
-        display: inline-grid;
-        grid-template-columns:auto;
-        width: 100%;
     }
 }
 
-@media screen and (max-width: 768px) {
-    #que-es-oscars-club {
-      
-    width: 90%;
-    margin:auto;
+@media screen and (max-width: 768px){
+    
+    #unete-al-club,#como-funciona{
+
+        display: inline-block;
+        grid-template-columns:auto;
+        margin-bottom: 10px;       
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    #que-es-oscars-club{
+
+        width: 90%;
+        margin:auto;
     }
 }
 
 /***************** CLUBES TEMÁTICOS *******************************/
 
 #clubes{
+
     display: inline-grid;
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     grid-gap: 10px;
     width: 100%;
     margin: auto;
     margin-bottom: 100px;
-    padding:10px;
+    font-size: 0.95em;
 }
 
 .club-text-left{
+
     text-align: left;
+    font-size: 0.9em;
 }
 
 .veremos-2020{
-    text-align: left;
-    padding-top: 10px;
-    padding-bottom: 10px; 
-}
 
-.img-caption{
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 1.14em;
+    font-size: 0.9em;
+}
+
+.img-caption {
+
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
 }
 
-.puntos{
+.puntos {
+
     color: #9b1700;
     font-weight: bold;
     padding-right: 4px; 
@@ -243,22 +299,26 @@ form input{
 
 /************* Media query para clubes tematicos ***************/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
+    
     #clubes{
-    display: inline-grid;
-    grid-template-columns: auto; 
-   
+
+        display: inline-block;
+        grid-template-columns: auto; 
+        margin-bottom: 30px;
+        padding: 10px;
     }
 }
 
 /************ pagina Sesiones 2020 *****************************/
 
 .pagina-sesiones-parrafo-1{
+
     width: 80%;
     margin:auto;
 }
 
-.sesiones-contenedor{
+.sesiones-contenedor {
 
     display: inline-grid;
     grid-template-columns: 35% auto;
@@ -274,101 +334,117 @@ form input{
     border-right:0px;
 }
 
-#sessiones-por-club a{
+#sessiones-por-club a
+{
     color: #1c1c1c;
 }
 
-.img-caption{
+.img-caption {
 
     font-weight: bold;
     margin-top: 25px;
-   
 }
-#sessiones-por-club{
+
+#sessiones-por-club {
 
     font-size: 0.88em;
 }
-#sessiones-por-club a:hover{
+
+#sessiones-por-club a:hover {
+
     color: rgba(0,0,0,0.7);
-    
 }
 
-.movies{
+.movies {
+
     display: inline-grid;
     grid-template-columns: 32% 32% 32%;
     grid-gap: 6px;
-    
 }
 
 .tarjeta {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      width: 100%;
-      color: #9b1700;
-      background-color: white;
-      padding: 2px;
-      font-size: 0.8em;
-      text-align: left;
-      font-weight: bold;
-  }
 
-.tarjeta>*{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    color: #9b1700;
+    background-color: white;
+    padding: 2px;
+    font-size: 0.8em;
+    text-align: left;
+    font-weight: bold;
+}
+
+.opaco {
+
     opacity: 0.6;
 }
+ 
+.link-sesiones {
 
-.tarjeta a:hover{
-    opacity: 0.99;
+    color: #1c1c1c;
 }
-
-.link-sesiones{
-      color: #1c1c1c;
-  }
 
 
 /********* media query pagina sessiones 2020 *********************/
 
 @media screen and (max-width: 768px) {
-    .sesiones-contenedor{
-    display: inline-grid;
-    grid-template-columns: auto;
-    width:100%;
+
+    .sesiones-contenedor {
+
+        display: inline-grid;
+        grid-template-columns: auto;
+        width:100%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .sesiones{
-    text-align: center;
+
+    .sesiones {
+
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
+
     .movies{
-    display: inline-grid;
-    grid-template-columns: auto;
-    width:50%;
+        display: inline-grid;
+        grid-template-columns: auto;
+        width:50%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .pagina-sesiones-parrafo-1{
-    
-    width:96%;
+
+    .pagina-sesiones-parrafo-1 {
+
+        width:96%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .pagina-sesiones-parrafo-1 {
+
+        width:96%;
     }
 }
 
 /************************** detalle sesion ********************/
 
-.detalle-sesion{
+.detalle-sesion {
+
     display: inline-grid;
     grid-template-columns: 35% auto;
     grid-gap: 20px;
     text-align: justify;
     padding-bottom: 30px;
-    font-size:0.9em;
-    
-    
+    font-size:0.95em;
+    line-height: 1.7; 
 }
 
-.hilo{
+.hilo {
+
    width: 100%;
    padding: 10px;
    font-size: 0.8em;
@@ -377,29 +453,32 @@ form input{
 }
 
 .hilo a{
-    color:#1c1c1c
 
+    color:#1c1c1c;
 }
 
 .hilo a:hover{
-    color:  rgb(28, 28, 28,0.5);
 
+    color:  rgb(28, 28, 28,0.5);
 }
 
 .klaus-titulo{
+
     margin-top: 20px;
     margin-bottom: 10px;
     color:#1c1c1c  
 }
 
 #sobre-la-obra>*{
+
     padding: 6px;
 }
 
 .detalle-sesion>*{
-
+    
     padding: 6px;
 }
+
 dd{
     padding-left: 10px;   
 }
@@ -416,68 +495,83 @@ dt{
 }
 
 .rounded{
+
     border-radius: 50%;
     float: left;
+    shape-outside:circle();
 }
 
-iframe{ border: 0px; }
+.responsiva{
+
+    width: 100%;
+    height: 50%;
+    
+}
+
+iframe{ 
+
+    border: 0px; 
+}
 
 /************************** media query detalle sesion ***************/
 
 @media screen and (max-width: 768px) {
-    .detalle-sesion{
-    display: inline-grid;
-    grid-template-columns: auto;
-    width:100%;
-    padding:30px;
-    padding-top: 5px;
-    
+
+    .detalle-sesion {
+
+        display: inline-grid;
+        grid-template-columns: auto;
+        width:100%;
+        padding:30px;
+        padding-top: 5px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .hilo{
-    text-align: center;
-    padding: 0px;
-    margin-bottom: 4px;
-    width: 100%;
+
+    .hilo {
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 4px;
+        width: 100%;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .klaus-titulo{
-    text-align: left;
-    padding: 0px;
-    padding-left: 37px;
-    margin-bottom: 4px;
-    width: 100%;
+
+    .klaus-titulo {
+        text-align: left;
+        padding: 0px;
+        padding-left: 37px;
+        margin-bottom: 4px;
+        width: 100%;
     }
 }
 
 /************************** footer ***********************************/
 
-footer{
-    
+footer {
+
     background-color:#433A44;
     color: #FFFFFF;
     padding:8px;
     clear: both;
     font-size: 0.9em;
-    font-family: 'Open Sans', sans-serif;
-    
+    font-family: 'Open Sans', sans-serif; 
 }
 
-footer>*{
+footer>* {
 
     background-color: #433A44;
 }
+
 .footer-div-1{ float: left; padding: 6px; }
 
 .footer-div-2{ float: right; padding: 6px; }
 
 .footer-div-3{ clear: both; padding: 6px; }
 
-.footer-div-4{ padding: 6px; text-align: right;
-}
+.footer-div-4{ padding: 6px; text-align: right;}
 
 footer a{ color: #FFFFFF;}
 
@@ -486,56 +580,14 @@ footer a:hover{color: #9b1700;}
 /************ media query para el footer ****************************/
 
 @media screen and (max-width: 768px) {
+
     .footer-div-1,.footer-div-2,.footer-div-3{
         
-    display: inline-grid;
-    grid-template-columns: auto;
-    width:100%;
-    text-align: center;
-    padding: 14px;
-    font-size: 0.9em;
-    
+        display: inline-grid;
+        grid-template-columns: auto;
+        width:100%;
+        text-align: center;
+        padding: 14px;
+        font-size: 0.9em;
     }
 }
-
-
-
-
-
-
-
-
-
-
- 
-
-.responsiva {
-    width: 100%;
-    height: 46%;
-  }
-
-
-  .club{
-    color: #9b1700;
-    font-style: italic;  
-}
-
-.check{ width: 15px; }
-
-.boton{
-    background-color:#9b1700 ;
-    color: #FFFFFF;
-    border-radius: 2px;
-    padding: 6px;
-    width: 130px;
-    border: unset;
-    cursor: pointer;
-    font-family: 'Noto Serif', serif;
-}
-
-
-
-
-
-
-
